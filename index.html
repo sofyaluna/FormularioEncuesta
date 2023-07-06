@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Formulario de Encuestra App Mercado Libre </h1>
+        <p id="description" class="description text-center">
+          Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="Nombre">Nombre</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Coloque su nombre"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Coloque su email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Edad<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="edad"
+          />
+        </div>
+        <div class="form-group">
+          <p>Qué opción describe mejor su rol actual?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Seleccione un rol</option>
+            <option value="student">Estudiante</option>
+            <option value="job">Trabajo tiempo completo</option>
+            <option value="learner">Trabajo medio tiempo</option>
+            <option value="preferNo">Prefiero no contestar </option>
+            <option value="other">Otros</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Recomiendaria que usara ML a un amigo?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitivamente</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Quizas</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />No estoy seguro</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Que es lo que más te gusta de ML?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Seleccione una opcion</option>
+            <option value="challenges">Ofertas</option>
+            <option value="projects">Envios gratis</option>
+            <option value="community">Mostrar la calificacion del vendedor </option>
+            <option value="openSource">Otros</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            ¿Qué le gustaría ver mejorado? 
+            <span class="clue">(Marque todo lo que corresponda)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Ofertas mayores</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Envios mas rápidos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Respuestas mas rapidas de parte del vendedor </label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Otros </label
+          >
+          
+
+        <div class="form-group">
+          <p>Algun comentario o sugerencia?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Escriba su comentario aqui..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
